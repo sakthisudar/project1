@@ -1,0 +1,15 @@
+{
+	"name": "ADFADEDEV",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "260ac2ef-90f2-4567-abfb-9edb625b26c1",
+		"tenantId": "57a4334a-04ad-401a-9d75-3969a1bb8720"
+	}
+}

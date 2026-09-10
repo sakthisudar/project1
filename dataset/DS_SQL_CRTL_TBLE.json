@@ -1,0 +1,17 @@
+{
+	"name": "DS_SQL_CRTL_TBLE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_SRC",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "control_table"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

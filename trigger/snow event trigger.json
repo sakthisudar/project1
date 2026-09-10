@@ -1,0 +1,27 @@
+{
+	"name": "snow event trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_SNOW_BLOB_TO_ADLS",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"container": "input"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/snowflake/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/71d88084-ff78-445a-82fe-4cf1678f7950/resourceGroups/RG_ADE_DEV/providers/Microsoft.Storage/storageAccounts/blobdevade",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

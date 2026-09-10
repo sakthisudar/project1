@@ -1,0 +1,13 @@
+{
+	"name": "DS_RESTAPI_SRC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_RESTAPI_SRC",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

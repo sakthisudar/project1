@@ -1,0 +1,59 @@
+{
+	"name": "DS_SQL_SRC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_SRC",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SchemaName": {
+				"type": "string"
+			},
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "order_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "customer_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "order_purchase_timestamp",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "order_approved_at",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "order_delivered_carrier_date",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "order_delivered_customer_date",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "order_estimated_delivery_date",
+				"type": "datetime2",
+				"scale": 7
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
